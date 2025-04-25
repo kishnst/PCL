@@ -1,0 +1,16 @@
+2025-04-25 18:38:17,612 - logger_config - ERROR - GEMINI_API_KEY not found in environment variables
+2025-04-25 18:38:17,613 - logger_config - ERROR - GEMINI_API_KEY not found in environment variables
+2025-04-25 18:38:19,307 - logger_config - ERROR - GEMINI_API_KEY not found in environment variables
+2025-04-25 18:38:19,308 - logger_config - ERROR - GEMINI_API_KEY not found in environment variables
+2025-04-25 18:39:00,663 - logger_config - INFO - Fetching news for topic: technology
+2025-04-25 18:39:01,833 - logger_config - INFO - Successfully processed 10 articles
+2025-04-25 18:39:05,485 - logger_config - INFO - Fetching news for topic: politics
+2025-04-25 18:39:05,825 - logger_config - INFO - Successfully processed 10 articles
+2025-04-25 18:44:00,681 - logger_config - INFO - Fetching news for topic: politics
+2025-04-25 18:44:01,739 - logger_config - INFO - Successfully processed 10 articles
+2025-04-25 18:49:00,688 - logger_config - INFO - Fetching news for topic: politics
+2025-04-25 18:49:01,763 - logger_config - INFO - Successfully processed 10 articles
+2025-04-25 19:29:23,560 - logger_config - INFO - Fetching news for topic: politics
+2025-04-25 19:29:24,626 - logger_config - INFO - Successfully processed 9 articles
+2025-04-25 19:49:21,963 - logger_config - INFO - Fetching news for topic: politics
+2025-04-25 19:49:23,087 - logger_config - INFO - Successfully processed 10 articles
