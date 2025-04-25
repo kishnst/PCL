@@ -17,15 +17,27 @@ console = Console()
 def initialize_gemini():
     """Initialize the Gemini API with the API key."""
     try:
-        api_key = os.getenv("GEMINI_API_KEY")
-        print(api_key)
+        # Get API key from environment variables
+        api_key = os.getenv('GEMINI_API_KEY')
+        
+        # Check if API key exists
         if not api_key:
             console.print("[red]Error: GEMINI_API_KEY not found in environment variables[/red]")
+            console.print("[yellow]Please make sure your .env file contains:[/yellow]")
+            console.print("[yellow]GEMINI_API_KEY=your_api_key_here[/yellow]")
             sys.exit(1)
         
+        # Configure Gemini API
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-2.0-flash')
-        return model
+        
+        # Initialize the model
+        try:
+            model = genai.GenerativeModel('gemini-pro')
+            return model
+        except Exception as e:
+            console.print(f"[red]Error creating Gemini model: {str(e)}[/red]")
+            sys.exit(1)
+            
     except Exception as e:
         console.print(f"[red]Error initializing Gemini: {str(e)}[/red]")
         sys.exit(1)
